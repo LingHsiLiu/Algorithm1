@@ -16,6 +16,8 @@ class Solution:
         # write your code here
         if nums is None:
             return -1
+#         if len(nums) == 0:
+#             return 0
         start = 0
         end = len(nums) -1
         while start + 1 < end:
