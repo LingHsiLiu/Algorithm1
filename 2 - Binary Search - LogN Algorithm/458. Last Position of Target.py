@@ -18,6 +18,8 @@ class Solution:
     """
     def lastPosition(self, nums, target):
         # write your code here
+        if not nums or target is None:
+            return -1
         start = 0
         end = len(nums) -1
         
