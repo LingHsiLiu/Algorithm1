@@ -10,19 +10,29 @@ class Solution:
     @param: : a string to be split
     @return: all possible split string array
     """
-
+    # 先12 => "1", "2", "12"
+    # 再加3
+    
     def splitString(self, s):
         # write your code here
-        result = []
-        self.dfs(result, [], s)
-        return result
-
-    def dfs(self, result, path, s):
-        if s =="":
-            result.append(path[:])
-            return
-        for i in range(2):
-            if i+1 <= len(s):
-                path.append(s[i+1])
-                self.dfs(rsult, path, s[i+1:])
-                path.pop()
+        return self.helper(s)
+        
+    def helper(self, s):
+        if len(s) == 0:
+            return [[]]
+        if len(s) == 1:
+            return [[s]]
+        
+        rt = []
+        one = self.splitString(s[:-1])
+        two = self.splitString(s[:-2])
+#         print(one)
+#         print(two)
+        
+        for o in one:
+            rt.append(o + [s[-1]])
+            
+        for t in two:
+            rt.append(t + [s[-2:]])
+            
+        return rt
