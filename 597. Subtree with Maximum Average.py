@@ -15,8 +15,8 @@ class Solution:
     
     def findSubtree2(self, root):
         # Write your code here
-
         sum, size, node, average = self.helper(root)
+        # self.helper(root)
         return node
 
     def helper(self, root):
@@ -42,6 +42,10 @@ class Solution:
             else:
                 node = right_Node
                 average = right_average
+        
+    # if self.node is None or sum * 1.0 / size > self.average:
+    #     self.node = root
+    #     self.average = sum * 1.0 / size
 
         return sum, size, node, average
         
