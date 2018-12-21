@@ -7,7 +7,7 @@
 # Given "23"
 
 # Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
-
+#時間複雜度 3^N ～ 4^N 之間
 KEYBOARD = {
     '2': 'abc',
     '3': 'def',
