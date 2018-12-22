@@ -2,3 +2,12 @@ heap
 dequeue
 queue
 set
+
+python 2
+for k, v in d.iteritems():
+
+
+python 3
+for key, value in dic.items():
+            print(key)
+            print(value)
