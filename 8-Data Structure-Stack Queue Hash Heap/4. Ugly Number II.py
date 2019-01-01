@@ -24,10 +24,10 @@ class Solution:
         visited = set([1])
 
         val = None
-        for i in range(n):
+        for i in range(n): #O(n)
             val = heapq.heappop(heap) #O(n)取最小的數
             for multi in [2, 3, 5]:
                 if val * multi not in visited:
                     visited.add(val * multi)
-                    heapq.heappush(heap, val * multi)
+                    heapq.heappush(heap, val * multi) #O (nlog(n))
         return val
