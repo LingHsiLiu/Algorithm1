@@ -11,3 +11,26 @@ python 3
 for key, value in dic.items():
             print(key)
             print(value)
+
+
+heapq
+add O(logN)
+remove O(logN)
+Min O(1)
+Max O(1)
+
+Priority Queue -> remove(x)  O(n)
+               -> pop (remove top) O(1)
+包裝 用堆實現
+
+sort
+Quick sort (快速排序) offline O(n)
+Merge sort（歸併排序） online O(nlogn) + klog K
+                            O(n)heapify(堆化) + klogk
+
+heap
+max heap => top k largest
+push heap O(nlogn)
+pop() heap O(klogn)
+max heap (n + klogn)
+min heap ()
