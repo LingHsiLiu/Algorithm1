@@ -26,7 +26,7 @@ class Solution:
     @param: num: Number to be added
     @return: nothing
     """
-    def add(self, num):
+    def add(self, num): #logk
         # write your code here
         if len(self.nums) < self.k:
             heapq.heappush(self.nums, num)
@@ -37,6 +37,6 @@ class Solution:
     """
     @return: Top k element
     """
-    def topk(self):
+    def topk(self):  #klogk
         # write your code here
         return sorted(self.nums, reverse=True)
