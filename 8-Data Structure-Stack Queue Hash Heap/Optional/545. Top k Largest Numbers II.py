@@ -26,13 +26,13 @@ class Solution:
     @param: num: Number to be added
     @return: nothing
     """
-    def add(self, num): #logk
+    def add(self, num): #O(n) #總共O(nlogk)
         # write your code here
         if len(self.nums) < self.k:
-            heapq.heappush(self.nums, num)
+            heapq.heappush(self.nums, num) #logk
         elif num > self.nums[0]: #最小的top k值
-            heapq.heappop(self.nums)
-            heapq.heappush(self.nums, num)
+            heapq.heappop(self.nums) #logk
+            heapq.heappush(self.nums, num) #logk
 
     """
     @return: Top k element
