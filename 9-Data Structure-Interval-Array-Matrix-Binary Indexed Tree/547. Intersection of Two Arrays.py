@@ -7,7 +7,9 @@
 # Challenge
 # Can you implement it in three different algorithms?
 
-# O(n+m)
+# time: O(n+m)
+# extra space: O(n+m)
+
 
 class Solution:
     """
