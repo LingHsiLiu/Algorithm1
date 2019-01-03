@@ -7,10 +7,6 @@
 # Challenge
 # Can you implement it in three different algorithms?
 
-# time: O(n+m)
-# extra space: O(n+m)
-
-
 class Solution:
     """
     @param nums1: an integer array
@@ -19,4 +15,20 @@ class Solution:
     """
     def intersection(self, nums1, nums2):
         # write your code here
-        return list(set(nums1).intersection(set(nums2)))
+        
+        # time: O(n+m)
+        # extra space: O(m)
+        
+        if len(nums1) < len(nums2):
+            nums1, nums2 = nums2, nums1
+        num_set = set(nums2)
+        result_set = set()
+        for num in nums1:
+            if num in num_set:
+                result_set.add(num)
+        return list(result_set)
+        
+        # time: O(n+m)
+        # extra space: O(n+m)
+        
+        # return list(set(nums1).intersection(set(nums2)))
