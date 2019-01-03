@@ -32,3 +32,12 @@ class Solution:
         # extra space: O(n+m)
         
         # return list(set(nums1).intersection(set(nums2)))
+        
+        # extra space O(1)
+        # extra memory O(1)
+        # constant space
+        # O(1) space
+        # in place
+        
+        # extra -> no input, no output
+        # 不包含輸入輸出
