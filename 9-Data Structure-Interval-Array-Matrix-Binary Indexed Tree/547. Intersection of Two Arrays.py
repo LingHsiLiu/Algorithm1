@@ -7,6 +7,8 @@
 # Challenge
 # Can you implement it in three different algorithms?
 
+# O(n+m)
+
 class Solution:
     """
     @param nums1: an integer array
