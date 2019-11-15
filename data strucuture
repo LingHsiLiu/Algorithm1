@@ -24,6 +24,8 @@ Time complexity
 heapq.heapify(x): O(k)
 heapq.heappush(heap, item): O(logk)
 heapq.heappop(heap): O(logk)
+heapq.nlargest(k, nums)
+heapq.nsmallest(k, nums)
 
 
 Priority Queue -> remove(x)  O(n)
