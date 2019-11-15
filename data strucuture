@@ -3,6 +3,8 @@ dequeue
 queue
 set
 
+
+
 python 2
 for k, v in d.iteritems():
 
@@ -18,6 +20,11 @@ add O(logN)
 remove O(logN)
 Min O(1)
 Max O(1)
+Time complexity
+heapq.heapify(x): O(k)
+heapq.heappush(heap, item): O(logk)
+heapq.heappop(heap): O(logk)
+
 
 Priority Queue -> remove(x)  O(n)
                -> pop (remove top) O(1)
